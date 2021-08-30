@@ -1,0 +1,9 @@
+_BASE_: Base-PointRend-RCNN-FAN.yaml
+MODEL:
+  WEIGHTS: detectron2://ImageNetPretrained/MSRA/R-50.pkl
+#  WEIGHTS: "path/pointrend_coco_r50_1x_fan/model_final.pth"
+  RESNETS:
+    DEPTH: 50
+# To add COCO AP evaluation against the higher-quality LVIS annotations.
+# DATASETS:
+#   TEST: ("coco_2017_val", "lvis_v0.5_val_cocofied")

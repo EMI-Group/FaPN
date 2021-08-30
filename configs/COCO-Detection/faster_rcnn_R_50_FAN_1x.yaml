@@ -1,0 +1,7 @@
+_BASE_: "../Base-RCNN-FAN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+#  WEIGHTS: "path/faster_rcnn_r50_1x_fan/model_final.pth"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50

@@ -1,0 +1,6 @@
+_BASE_: "Base-Panoptic-FAN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+#  WEIGHTS: "path/panoptic_r50_1x_fan/model_final.pth"
+  RESNETS:
+    DEPTH: 50
