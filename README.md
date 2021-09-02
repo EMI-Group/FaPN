@@ -177,7 +177,7 @@ python3 train_net.py --config-file <config.yaml> --num-gpus 8 --eval-only MODEL.
 </tbody></table>
 
 
-### COCO Instance Segmentation
+### COCO Panoptic Segmentation
 #### PanopticFPN + FaPN:
 <table><tbody>
 <!-- START TABLE -->
